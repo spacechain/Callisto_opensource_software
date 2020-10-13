@@ -1,24 +1,25 @@
 # Callisto Spacenode Software
 
-## 背景介绍
+## Introduction
 
-Spacenode软件是SPC开发的一款用于批量处理SpaceChain比特币安全支付交易的星上软件，该版本为运行在Callisto社区开发板上的改版，与在轨节点上运行的软件功能完全相同。软件整体分为Linux OS运行部分和SpaceChain OS运行部分两部分,两部分软件通过混合系统的虚拟网卡进行数据交互，协同完成交易处理工作。
+Developed by SpaceChain Foundation, Space Node software is used to perform multisignature bitcoin transactions on our SPC payload. The Callisto hardware board is embedded with Space Node software. The software is operated in both Linux OS and SpaceChain OS. Communications between two operating systems are done via virtual NIC. 
 
-## 功能介绍
 
-### Linux OS运行部分
+## Function
 
-* 数据文件获取
-* 数据文件解析
-* 双系统间数据交互
-* 签名结果文件打包与上传
+### Space Node software in Linux OS
 
-### Spacechain OS运行部分
+* Obtain transaction files
+* Analyze transaction files
+* Communications between Linux and SpaceChain OS
+* Upload the transactions files 
 
-* 状态监控
-* 脚本、依赖库、应用升级
-* 交易签名
+### Space Node software in SpaceChain OS
 
-## 编译
+* Status monitoring
+* Script, dependent libraries and application upgrade
+* Authenticate the transactions 
 
-两部分软件需要分别编译，具体的编译规则在对应的文件夹中。
+## Compile the Space Node software
+
+The Space Node software has to be compiled in Linux and SpaceChain OS, respectively. 
